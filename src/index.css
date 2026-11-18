@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Główne kontenery i sekcje */
+.panel {
+  background-color: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.panel-table {
+  background-color: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.inner-box {
+  background-color: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.inner-box-green {
+  background-color: #ecfdf5;
+  border: 2px solid #6ee7b7;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Przyciski */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #c2410c;
+  border-color: #c2410c;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #059669;
+  border-color: #059669;
+  color: #ffffff;
+}
+.btn-success:hover {
+  background-color: #047857;
+  border-color: #047857;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+  color: #374151;
+}
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.btn-danger {
+  background-color: #fef2f2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+.btn-danger:hover {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn:disabled {
+  background-color: #f3f4f6;
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Nawigacja */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 2px solid #d1d5db;
+  background-color: #f9fafb;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-btn:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.nav-btn-active,
+.nav-btn-active:hover {
+  background-color: #ea580c;
+  border-color: #ea580c;
+  color: #ffffff;
+}
+
+.nav-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+.nav-btn-active .nav-badge {
+  background-color: #ffffff;
+  color: #ea580c;
+}
+
+/* Pola formularzy */
+.input {
+  width: 100%;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+.input:focus {
+  outline: none;
+  border-color: #ea580c;
+}
+
+.input-sm {
+  padding: 5px 6px;
+  font-size: 12px;
+}
+
+.input-auto {
+  width: auto;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* Zdjęcia przepisów */
+.card-image-box {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details-image-box {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.details-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumb-small {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.empty-box {
+  text-align: center;
+  padding: 20px 14px;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  color: #374151;
+}
+.tag-green {
+  border-color: #6ee7b7;
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+.tag-orange {
+  border-color: #fdba74;
+  background-color: #fff7ed;
+  color: #9a3412;
+}
